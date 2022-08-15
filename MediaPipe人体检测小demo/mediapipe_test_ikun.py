@@ -6,7 +6,6 @@ mp_pose = mp.solutions.pose
 
 cap = cv2.VideoCapture('ji.mp4')
 
-# 啟用姿勢偵測
 with mp_pose.Pose(
     min_detection_confidence=0.5,
     min_tracking_confidence=0.5) as pose:
